@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "413735588496",
+    "project_id": "medinfosys-66b86",
+    "storage_bucket": "medinfosys-66b86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413735588496:android:5eb1dfcc3295d3f2313e15",
+        "android_client_info": {
+          "package_name": "com.example.medicationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413735588496-lu028knuv0qnkso8k68bfhupd4v4qc30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSIQR5VpwQRrdXgybX7nvNbliuSzgnY3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413735588496-lu028knuv0qnkso8k68bfhupd4v4qc30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
