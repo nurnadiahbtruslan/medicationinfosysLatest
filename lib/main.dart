@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:medicationinfosys/wrapper.dart';
+import 'package:medicationinfosys/auth.dart';
+import 'package:provider/provider.dart';
+import 'package:medicationinfosys/user.dart';
 import 'homepage.dart';
 
 void main(){
@@ -9,6 +12,18 @@ void main(){
 class MedApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    return StreamProvider<User>.value(
+      value: AuthService().user,
+          
+          
+          child: MaterialApp(
+        home: Wrapper(),
+      ),
+    );
+  }
+}
+
+  /*Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: HomePage.routeName,
@@ -18,4 +33,5 @@ class MedApp extends StatelessWidget {
       },
     );
   }
-}
+}*/
+

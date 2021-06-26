@@ -7,6 +7,7 @@ class MedicationItem extends StatefulWidget {
   final String imageUrl;
   final bool isFavourite;
   final String id;
+  final String purpose;
   final DocumentSnapshot documentSnapshot;
   MedicationItem({
     @required this.imageUrl,
@@ -14,6 +15,7 @@ class MedicationItem extends StatefulWidget {
     @required this.id,
     @required this.isFavourite,
     @required this.medicationName,
+    @required this.purpose,
   });
 
   @override
@@ -57,10 +59,22 @@ class _MedicationItemState extends State<MedicationItem> {
                               fontSize: 25),
                         ),
                       ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: Text(
+                          widget.purpose,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 20),
+                        ),
+                      ),
                     
                     ],
                     crossAxisAlignment: CrossAxisAlignment.start,
                   ),
+               
+                  
                   Row(
                     children: <Widget>[
                       IconButton(
